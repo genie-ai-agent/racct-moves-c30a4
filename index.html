@@ -3,167 +3,172 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RACCT — We Move Everything</title>
-<meta name="description" content="RACCT moves everything. House to house, cross country, junk hauled off, priced and valued in real time, packed, organized, and set up like a palace.">
+<title>RACCT — We move everything.</title>
+<meta name="description" content="RACCT moves everything. House to house, cross country, junk hauled off, priced in real time, packed and organized on arrival.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="nav">
-  <a class="wordmark" href="#top">RACCT<span>®</span></a>
-  <nav class="nav-links">
-    <a href="#haul">What we move</a>
-    <a href="#day">Move day</a>
-    <a href="#value">Real-time pricing</a>
-    <a href="#estimate">Estimate</a>
-  </nav>
-  <a class="nav-cta" href="tel:+18005550199">Book move day</a>
+  <div class="nav-in">
+    <a class="wordmark" href="#top">RACCT</a>
+    <nav>
+      <a href="#move">What we move</a>
+      <a href="#day">Move day</a>
+      <a href="#value">Pricing</a>
+      <a href="#estimate">Estimate</a>
+    </nav>
+    <a class="nav-cta" href="#estimate">Book</a>
+  </div>
 </header>
 
 <main id="top">
 
   <section class="hero">
-    <p class="kicker"><span class="dot"></span> Local · Cross-country · Junk-out · Same crew, same day</p>
-    <h1>
-      <span class="line l1">WE MOVE</span>
-      <span class="line l2">EVERY<em>thing</em></span>
-    </h1>
-    <div class="hero-body">
-      <p class="lede">Your house to another house. Three blocks or three thousand miles. The stuff you love comes with us. The stuff you don't goes on the junk truck and gets trashed the same day.</p>
-      <p class="sub">One crew shows up on move day and handles all of it: sorting, discarding, pricing what's worth money, packing, loading, driving, unloading, and setting the new place up so it looks like a palace before we leave.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#estimate">Get a move-day estimate</a>
-        <a class="btn btn-ghost" href="tel:+18005550199">Talk to a crew lead</a>
-      </div>
+    <p class="eyebrow reveal">Local · Cross-country · Junk-out</p>
+    <h1 class="reveal">We move<br>everything.</h1>
+    <p class="lede reveal">Your house to another house. What you don't want, we trash. What you do, we price, pack, and set up like a palace.</p>
+    <div class="links reveal">
+      <a class="link" href="#estimate">Get an estimate <span>›</span></a>
+      <a class="link" href="tel:+18005550199">Talk to a crew lead <span>›</span></a>
     </div>
-    <ul class="hero-stats">
-      <li><strong>1</strong><span>crew, start to finish</span></li>
-      <li><strong>0</strong><span>trips to the dump for you</span></li>
-      <li><strong>48</strong><span>states we'll drive to</span></li>
-      <li><strong>$$$</strong><span>back for what you resell</span></li>
-    </ul>
+    <div class="stats reveal">
+      <div><strong>1</strong><span>crew, start to finish</span></div>
+      <div><strong>0</strong><span>dump runs for you</span></div>
+      <div><strong>48</strong><span>states we drive</span></div>
+    </div>
   </section>
 
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track" id="marquee"></div>
-  </div>
-
-  <section class="haul" id="haul">
-    <div class="section-head">
-      <h2>Everything means <em>everything</em></h2>
-      <p>Pick all of it. It's one job, one crew, one invoice.</p>
+  <section class="panel dark" id="move">
+    <div class="head">
+      <h2 class="reveal">Everything means everything.</h2>
+      <p class="reveal">One job. One crew. One invoice.</p>
     </div>
-    <div class="haul-grid" id="haulGrid"></div>
+    <div class="tiles" id="tiles"></div>
   </section>
 
-  <section class="day" id="day">
-    <div class="section-head light">
-      <h2>Move day, hour by hour</h2>
-      <p>You point. We do the rest.</p>
+  <section class="panel" id="day">
+    <div class="head">
+      <h2 class="reveal">Move day, hour by hour.</h2>
+      <p class="reveal">You point. We do the rest.</p>
     </div>
     <ol class="timeline" id="timeline"></ol>
   </section>
 
-  <section class="value" id="value">
-    <div class="value-copy">
-      <p class="eyebrow">Real-time valuation</p>
-      <h2>We price your stuff <em>while</em> we pack it</h2>
-      <p>Half of what's in a house is worth real money and the other half is worth a dump run. Our crew scans and comps every item as it comes off the shelf: local resale, national sold-listings, and scrap. You get a live number and three choices on the spot.</p>
-      <ul class="choices">
-        <li><span>Keep</span> it rides with us, wrapped and labeled</li>
-        <li><span>Cash</span> we buy it on the spot and deduct it from your bill</li>
-        <li><span>Toss</span> it goes on the junk truck, donated or dumped</li>
-      </ul>
-    </div>
-    <div class="ledger">
-      <div class="ledger-head">
-        <span>Live sort · 1428 Palmetto St</span>
-        <span class="blink">SCANNING</span>
+  <section class="panel value" id="value">
+    <div class="value-grid">
+      <div class="value-copy">
+        <p class="eyebrow reveal">Real-time valuation</p>
+        <h2 class="reveal">We price it while we pack it.</h2>
+        <p class="reveal">Every item comped against live local resale and sold listings, on the spot. Three choices, no waiting.</p>
+        <ul class="choices reveal">
+          <li><strong>Keep</strong><span>Rides with us, wrapped and labeled.</span></li>
+          <li><strong>Cash</strong><span>We buy it, credited off your bill.</span></li>
+          <li><strong>Toss</strong><span>Junk truck, donated or dumped.</span></li>
+        </ul>
       </div>
-      <ul id="ledgerList"></ul>
-      <div class="ledger-total">
-        <span>Credited back to you</span>
-        <strong id="ledgerTotal">$0</strong>
+      <div class="ledger reveal">
+        <div class="ledger-head">
+          <span>1428 Palmetto St</span>
+          <span class="live">Live sort</span>
+        </div>
+        <ul id="ledgerList"></ul>
+        <div class="ledger-total">
+          <span>Credited back to you</span>
+          <strong id="ledgerTotal">$0</strong>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="palace">
-    <p class="eyebrow center">The part nobody else does</p>
-    <blockquote>
-      When we pull out of your driveway, that place looks like a <em>palace</em>.
-    </blockquote>
+  <section class="panel dark palace">
+    <div class="head">
+      <p class="eyebrow reveal">The part nobody else does</p>
+      <h2 class="reveal">Then it looks like a palace.</h2>
+    </div>
     <div class="palace-grid" id="palaceGrid"></div>
   </section>
 
-  <section class="estimate" id="estimate">
-    <div class="est-head">
-      <h2>Estimate your move day</h2>
-      <p>Rough number in ten seconds. No account, no sales call unless you want one.</p>
+  <section class="panel" id="estimate">
+    <div class="head">
+      <h2 class="reveal">Estimate your move.</h2>
+      <p class="reveal">Ten seconds. No account.</p>
     </div>
-    <form class="est-form" id="estForm" novalidate>
-      <label>Home size
-        <select id="size">
-          <option value="studio">Studio / 1 room</option>
-          <option value="1br">1 bedroom</option>
-          <option value="2br" selected>2 bedrooms</option>
-          <option value="3br">3 bedrooms</option>
-          <option value="4br">4+ bedrooms / house</option>
-        </select>
-      </label>
-      <label>Distance
-        <select id="distance">
-          <option value="local">Across town (under 30 mi)</option>
-          <option value="regional">Same state (30–300 mi)</option>
-          <option value="long" selected>Cross country (300+ mi)</option>
-        </select>
-      </label>
-      <label>Junk to haul off
-        <select id="junk">
-          <option value="none">None, moving it all</option>
-          <option value="some" selected>A few rooms' worth</option>
-          <option value="lots">Garage, basement, the works</option>
-        </select>
-      </label>
-      <fieldset class="addons">
-        <legend>Add-ons</legend>
-        <label class="chk"><input type="checkbox" id="pack" checked> Full pack &amp; wrap</label>
-        <label class="chk"><input type="checkbox" id="organize" checked> Unpack &amp; organize the new place</label>
-        <label class="chk"><input type="checkbox" id="appraise" checked> Real-time pricing &amp; resale credit</label>
-        <label class="chk"><input type="checkbox" id="storage"> 30 days of storage</label>
-      </fieldset>
-      <div class="est-out">
+
+    <div class="est reveal">
+      <div class="field">
+        <label>Home size</label>
+        <div class="seg" data-key="size">
+          <button type="button" data-val="studio">Studio</button>
+          <button type="button" data-val="1br">1 BR</button>
+          <button type="button" data-val="2br" class="on">2 BR</button>
+          <button type="button" data-val="3br">3 BR</button>
+          <button type="button" data-val="4br">4+ BR</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Distance</label>
+        <div class="seg" data-key="distance">
+          <button type="button" data-val="local">Across town</button>
+          <button type="button" data-val="regional">Same state</button>
+          <button type="button" data-val="long" class="on">Cross country</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Junk to haul off</label>
+        <div class="seg" data-key="junk">
+          <button type="button" data-val="none">None</button>
+          <button type="button" data-val="some" class="on">A few rooms</button>
+          <button type="button" data-val="lots">The works</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Add-ons</label>
+        <div class="switches">
+          <div class="sw on" data-key="pack" role="switch" aria-checked="true" tabindex="0"><span class="track"><i></i></span>Full pack and wrap</div>
+          <div class="sw on" data-key="organize" role="switch" aria-checked="true" tabindex="0"><span class="track"><i></i></span>Unpack and organize</div>
+          <div class="sw on" data-key="appraise" role="switch" aria-checked="true" tabindex="0"><span class="track"><i></i></span>Real-time pricing</div>
+          <div class="sw" data-key="storage" role="switch" aria-checked="false" tabindex="0"><span class="track"><i></i></span>30 days storage</div>
+        </div>
+      </div>
+
+      <div class="out">
         <span>Estimated move day</span>
         <strong id="estRange">$—</strong>
-        <small id="estNote">Includes crew, truck, fuel, and disposal fees.</small>
+        <small id="estNote"></small>
+        <a class="btn" id="estMail" href="mailto:movers@racct.com">Send to a crew lead</a>
       </div>
-      <a class="btn btn-primary wide" id="estMail" href="mailto:movers@racct.com">Send this to a crew lead</a>
-    </form>
+    </div>
   </section>
 
-  <section class="faq">
-    <h2>Straight answers</h2>
+  <section class="panel faq">
+    <div class="head"><h2 class="reveal">Straight answers.</h2></div>
     <div class="faq-list" id="faqList"></div>
   </section>
 
   <section class="final">
-    <h2>We move<br>everything.</h2>
-    <p>Tell us your move day. We'll show up with the truck, the crew, and the dumpster.</p>
-    <div class="cta-row center">
-      <a class="btn btn-invert" href="tel:+18005550199">1-800-555-0199</a>
-      <a class="btn btn-ghost-light" href="mailto:movers@racct.com">movers@racct.com</a>
+    <h2 class="reveal">We move everything.</h2>
+    <p class="reveal">Tell us your move day. We bring the truck, the crew, and the dumpster.</p>
+    <div class="links center reveal">
+      <a class="link" href="tel:+18005550199">1-800-555-0199 <span>›</span></a>
+      <a class="link" href="mailto:movers@racct.com">movers@racct.com <span>›</span></a>
     </div>
   </section>
 
 </main>
 
 <footer>
-  <span class="foot-mark">RACCT</span>
-  <p>Licensed &amp; insured household movers. Junk removal, donation routing, and certified disposal included. Serving 48 states.</p>
-  <small>© <span id="year"></span> RACCT. We move everything.</small>
+  <div class="foot-in">
+    <span class="foot-mark">RACCT</span>
+    <p>Licensed and insured household movers. Junk removal, donation routing, and certified disposal included. 48 states.</p>
+    <small>Copyright © <span id="year"></span> RACCT. We move everything.</small>
+  </div>
 </footer>
 
 <script src="data.js"></script>
